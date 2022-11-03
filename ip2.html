@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAY2</title>
+</head>
+<body>
+<h1> 
+        REACT-INTERVIEW PREPARATION(DAY-2)
+    </h1>
+
+    <pre>
+        <ol>
+            <li>What is the Difference between react and react native? Which one is library or framework?</li>
+            <span>ans. <b>React :</b> a JavaScript library, supporting both front end web and being run on the server, for building user interfaces and web applications.
+            <b>React Native:</b> is a mobile framework that compiles to native app components, allowing you to build native mobile applications (iOS, Android, and Windows) in JavaScript that allows you to use React to build your components, and implements React under the hood.</span> <br>
+
+            <li>What is the package name you are using for routing</li>
+            <span>ans. REACT ROUTER is a standard library system build on top of the React and used to create routing in the react application using React-Router-Package. </span>
+
+            <li>Routing Implementation</li>
+            <span>ans. After creatimg the react app need to run the command for installing the router pacakge that is "npm i react-router-dom".
+
+                
+                <b>BrowserRouter:</b> BrowserRouter is a router implementation that uses the HTML5 history API(pushState, replaceState and the popstate event) to keep your UI in sync with the URL. It is the parent component that is used to store all of the other components.
+                <b>Routes:</b> It’s a new component introduced in the v6 and a upgrade of the component. The main advantages of Routes over Switch are:
+                Relative s and s
+                Routes are chosen based on the best match instead of being traversed in order.
+                <b>Route:</b> Route is the conditionally shown component that renders some UI when its path matches the current URL.
+                <b>Link:</b> Link component is used to create links to different routes and implement navigation around the application. It works like HTML anchor tag.
+                To add React Router components in your application, open your project directory in the editor you use and go to app.js file. Now, add the below given code in app.js.
+                import {
+                    BrowserRouter as Router,
+                    Routes,
+                    Route,
+                    Link
+                } from 'react-router-dom';
+                then need to create components then we need to give the path for routing.
+                
+            </span>
+
+            <li> How do you switch/navigate form one component to another in React?</li>
+            <span> ans. There are five ways to Switch/Navigate from one component to another they are:
+                <b>Link:</b>Link is used to manage the navigation and it worked as an anchor tag. Check below code for the demonstration.
+                <b>NavLink:</b>NavLink behaves the same as Link but in addition, it comes with a new attribute called “activeClassName” which helps us to add the class to the anchor tag when page url will match.
+                <b>Redirect Component:</b>Rendering a <Redirect to="/path/to/redirect" /> component is used to manage the redirection. When you manage the redirection through the <Redirect> component then it will override the current location in the history stack.
+                <b>History.push:</b>If you want programmatically navigation from one page to another then you should use history.push method. In other words, we can say if you want to manage the redirection on button click then you can use it. This function will push a new entry in the history stack.
+                <b>History.replace:</b>history.replace function will replace the current location in the history stack and manage the redirection same as the history.push.
+            </span>
+
+            <li>What is lazy loading in react ?</li>
+            <span>ans. lazy loading means that a component or a part of code must get loaded when it is required. It is also referred to as code splitting and data fetching.</span>
+
+            <li>Difference b/w Stateful and stateless Component</li>
+            <span>ans. <b>Stateful:</b>If the behaviour of a component is dependent on the state of the component then it can be termed as stateful component. These stateful components are always class components and have a state that gets initialized in the constructor.
+            <b>stateless:</b>If the behaviour is independent of its state then it can be a stateless component. You can use either a function or a class for creating stateless components. But unless you need to use a lifecycle hook in your components, you should go for function components. There are a lot of benefits if you decide to use function components here; they are easy to write, understand, and test, a little faster, and you can avoid the this keyword altogether.</span>
+          
+        </ol>
+    </pre>
+    
+
+
+
+
+
+
+</body>
+</html>
